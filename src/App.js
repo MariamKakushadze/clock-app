@@ -1,23 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import Quotes from "./components/quotes";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-[url('./assets/mobile/bg-image-daytime.jpg')] bg-[#D8D8D8] bg-no-repeat bg-cover h-screen w-full bg-blend-multiply p-6">
+      <Quotes />
     </div>
   );
 }
