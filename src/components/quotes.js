@@ -22,20 +22,20 @@ export default function Quotes() {
   //   if (!data) return null;
 
   return (
-    <div className="flex flex-col gap-2 relative">
-      <span className="text-xs tracking-wider max-w-[90%] m-0">
+    <div className="flex flex-col gap-2 relative max-w-[90%] md:max-w-[80%] m-0">
+      <span className="text-xs md:text-lg tracking-wider  m-0">
         “{/* {data.content || */}
         `The science of operations, as derived from mathematics more especially,
         is a science of itself, and has its own abstract truth and value.` ”
       </span>
-      <p className="text-xs font-bold tracking-wider">
+      <p className="text-xs font-bold tracking-wider md:text-lg">
         {/* {data.author ||  */}
-        "Ada Lovelace"
+        Ada Lovelace
       </p>
       <img
         src={refresh}
         alt=""
-        className="absolute right-0 cursor-pointer"
+        className="absolute right-[-30px] cursor-pointer md:top-2"
         // onClick={updateQuote}
       />
     </div>
