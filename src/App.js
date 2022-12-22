@@ -1,3 +1,4 @@
+import MoreInfo from "./components/moreInfo";
 import Quotes from "./components/quotes";
 import Timezone from "./components/timezone";
 import { useState, useEffect } from "react";
@@ -31,6 +32,7 @@ function App() {
     >
       <Quotes />
       <Timezone />
+      <MoreInfo />
     </div>
   );
 }
