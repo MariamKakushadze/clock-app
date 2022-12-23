@@ -28,7 +28,7 @@ function App() {
           ? "bg-[url('./assets/tablet/bg-image-daytime.jpg')]"
           : "bg-[url('./assets/tablet/bg-image-nighttime.jpg')]"
       }
-       bg-[#D8D8D8] bg-no-repeat bg-cover h-screen w-full bg-blend-multiply p-6 md:p-16`}
+       bg-[#D8D8D8] bg-no-repeat bg-cover h-screen w-full bg-blend-multiply py-8 md:py-16`}
     >
       <Quotes />
       <Timezone />

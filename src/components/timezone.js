@@ -58,7 +58,7 @@ export default function Timezone() {
   let newGmt = gmt.slice(12, 15);
 
   return (
-    <div className="flex flex-col gap-4 m-0 mt-[200px]">
+    <div className="flex flex-col gap-4 m-0 mt-[250px] px-6 md:px-16 ">
       <div className="flex flex-row gap-4 align-middle m-0">
         <img
           src={hours >= 5 && hours < 18 ? sun : moon}
