@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import refresh from "../assets/desktop/icon-refresh.svg";
 
-export default function Quotes() {
+export default function Quotes(props) {
   //   const [data, setData] = useState(null);
   //   async function updateQuote() {
   //     try {
@@ -22,7 +22,10 @@ export default function Quotes() {
   //   if (!data) return null;
 
   return (
-    <div className="flex flex-col gap-2 relative max-w-[90%] md:max-w-[80%] m-0 px-6 md:px-16">
+    <div
+      className="flex flex-col gap-2 relative max-w-[90%] md:max-w-[80%] m-0 px-6 md:px-16 pb-[180px]"
+      style={{ display: props.moreInfo ? "none" : "flex" }}
+    >
       <span className="text-xs md:text-lg tracking-wider  m-0">
         “{/* {data.content || */}
         `The science of operations, as derived from mathematics more especially,

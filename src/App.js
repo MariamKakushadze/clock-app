@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [daytime, setDaytime] = useState(false);
+  const [moreInfo, setMoreInfo] = useState(false);
 
   useEffect(() => {
     let hours = new Date().getHours();
@@ -28,11 +29,15 @@ function App() {
           ? "bg-[url('./assets/tablet/bg-image-daytime.jpg')]"
           : "bg-[url('./assets/tablet/bg-image-nighttime.jpg')]"
       }
-       bg-[#D8D8D8] bg-no-repeat bg-cover h-screen w-full bg-blend-multiply py-8 md:py-16`}
+       bg-[#D8D8D8] bg-no-repeat bg-cover h-screen w-full bg-blend-multiply py-8 md:py-20`}
     >
-      <Quotes />
+      <Quotes moreInfo={moreInfo} setMoreInfo={setMoreInfo} />
       <Timezone />
-      <MoreInfo />
+      <MoreInfo
+        moreInfo={moreInfo}
+        setMoreInfo={setMoreInfo}
+        daytime={daytime}
+      />
     </div>
   );
 }

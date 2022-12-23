@@ -58,24 +58,27 @@ export default function Timezone() {
   let newGmt = gmt.slice(12, 15);
 
   return (
-    <div className="flex flex-col gap-4 m-0 mt-[250px] px-6 md:px-16 ">
+    <div className="flex flex-col gap-4 m-0 mt-[70px] px-6 md:px-16  md:gap-8">
       <div className="flex flex-row gap-4 align-middle m-0">
         <img
           src={hours >= 5 && hours < 18 ? sun : moon}
           alt=""
           className="m-0"
         ></img>
-        <p className="text-sm tracking-[3px]">{greeting()}</p>
+        <p className="text-sm tracking-[3px] md:text-lg">{greeting()}</p>
+        <p className="hidden md:flex ml-[-17px] text-sm tracking-[3px] md:text-lg">
+          , IT’S CURRENTLY
+        </p>
       </div>
       <div className="flex flex-row m-0 items-center h-[100px] ">
-        <span className="text-[100px] font-bold m-0 tracking-[-2.5px]">
+        <span className="text-[100px] font-bold m-0 tracking-[-2.5px] md:text-[175px]">
           {time}
         </span>
-        <p className="text-sm tracking-[3px] m-0 self-end relative bottom-4 left-2">
+        <p className="text-sm tracking-[3px] m-0 self-end relative bottom-4 left-2 md:text-lg md:bottom-0">
           {newGmt}
         </p>
       </div>
-      <p className="text-sm tracking-[3px]">
+      <p className="text-sm tracking-[3px] md:text-lg">
         {/* {data.data.location.city.name_translated},{" "}
     {data.data.location.country.alpha2} */}
         IN TBILISI, GE
