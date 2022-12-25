@@ -29,15 +29,17 @@ function App() {
           ? "bg-[url('./assets/tablet/bg-image-daytime.jpg')]"
           : "bg-[url('./assets/tablet/bg-image-nighttime.jpg')]"
       }
-       bg-[#D8D8D8] bg-no-repeat bg-cover h-screen w-full bg-blend-multiply py-8 md:py-20`}
+       bg-[#D8D8D8] bg-no-repeat bg-cover bg-[100%] h-screen w-full bg-blend-multiply py-8 md:py-20 xl:pt-14`}
     >
       <Quotes moreInfo={moreInfo} setMoreInfo={setMoreInfo} />
-      <Timezone />
-      <MoreInfo
-        moreInfo={moreInfo}
-        setMoreInfo={setMoreInfo}
-        daytime={daytime}
-      />
+      <div className="xl:flex xl:items-end">
+        <Timezone />
+        <MoreInfo
+          moreInfo={moreInfo}
+          setMoreInfo={setMoreInfo}
+          daytime={daytime}
+        />
+      </div>
     </div>
   );
 }
